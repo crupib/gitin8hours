@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Conditional Operator</title>
+</head>
+<body>
+<script>
+var x = 200; var y=100;
+var result = (x<y)?"apple":"banana";
+document.write(result+"<br>")
+if (x > y) {
+    document.write("x is greater than y"+"<br>");
+}
+if (x>y) { document.write("x is greater than y."+"<br>")}
+else { document.write("x is less than y."+"<br>")}
+var number = 20;
+switch (number) {
+  case 10: document.write("Running case 10" + "<br>"); break;
+  case 20: document.write("Running case 20" + "<br>"); break;
+  case 30: document.write("Running case 30" + "<br>"); break;
+  default: document.write("Running default code" + "<br>"); break;
+}
+for (var x = 0; x <= 5; x++) {
+   document.write(x+"<br>");
+}
+var counter = 0;
+while (counter < 8) {
+  document.write("&");
+  counter++;
+}
+document.write("<br>")
+var counter = 0;
+while (counter < 8) {
+  document.write("@");
+  counter++;
+} while(counter<8);
+var num=0;
+while (num < 10){
+  if (num==5) break;
+    num++;
+}
+document.write("<br>")
+document.write(num);
+
+var num=0;
+document.write("<br>")
+while (num < 10){
+  num++;
+  if (num==5) continue;
+  document.write(num);
+  document.write("<br>")
+}
+</script>
+</body>
+</html>

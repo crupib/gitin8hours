@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Variable Scope</title>
+    <script type="text/javascript">
+        var msg = 200; // Global variable
+
+        function test() {
+            var msg = 100; // Local variable inside function
+            document.getElementById('output').innerHTML += 'Local msg: ' + msg + '<br>'; // Append local msg with a line break
+        }
+
+        window.onload = function() {
+            document.getElementById('output').innerHTML += 'Global msg: ' + msg + '<br>'; // Append global msg with a line break
+        };
+    </script>
+</head>
+<body>
+    <div id="output"></div> <!-- This is where both outputs will appear -->
+    <script>
+        test(); // Call the test function to show both global and local messages
+    </script>
+</body>
+</html>
+

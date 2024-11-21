@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Array</title>
+</head>
+<body>
+<script>
+var arr = new Array("A", "B", "C");
+arr.reverse();
+var rev = arr.join(",");
+document.write(rev);
+document.write("<br>")
+var arr2 = new Array("a","b","c","d","e","f");
+var sli = arr2.slice(2,5);
+document.write(sli);
+document.write("<br>")
+var arr3 = new Array(2,5,3,1,4,6);
+arr3.sort();
+var sor = arr3.join(",");
+document.write(sor);
+document.write("<br>");
+var myarray = new Array();
+myarray[0]="Mon";
+myarray[1]="Tue";
+myarray[2]="Wed";
+myarray[3]="Tue";
+var days = myarray.toString();
+document.write(days);
+document.write("<br>");
+var index = myarray.indexOf("Tue");
+document.write(index);
+document.write("<br>");
+var index1 = myarray.lastIndexOf("Tue");
+document.write(index1);
+document.write("<br>");
+
+</script>
+</body>
+</html>
